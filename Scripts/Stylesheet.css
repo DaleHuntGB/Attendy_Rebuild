@@ -22,14 +22,17 @@
 * > a {
   text-decoration: none;
   color: var(--White);
+  font-weight: 600;
 }
 
 html,
 body {
   background-color: var(--LightGrey);
-  background-image: url("../Images/Backgrounds/Background_05.png");
+  background-image: url("../Images/Backgrounds/Background_04.png");
   background-position: center;
-  background-size: 100vh;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.25);
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
 }
 
@@ -46,7 +49,7 @@ body {
   border-radius: 0%;
   background: var(--DarkBlue);
   color: var(--White);
-  font-weight: 900;
+  font-weight: 600;
   outline: none;
   cursor: pointer;
   border-top-left-radius: 5px;
@@ -114,6 +117,8 @@ body {
   width: 80%;
   border-radius: 5px;
   border: 1px solid black;
+  text-align: center;
+  font-weight: 600;
 }
 
 .CheckIn_InputFields > input::placeholder {
