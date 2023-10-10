@@ -31,6 +31,8 @@ function ToggleModules() {
 const ModuleContainers = document.querySelectorAll(".ModuleContainer");
 
 for (i = 0; i <= ModuleContainers.length; i++) {
+  if (ModuleContainers[i] !== undefined) {
   ModuleContainers[i].addEventListener("click", ToggleModules);
   ModuleContainers[i].querySelector(".ModuleContainer_Content").style.display ="none";
+  }
 }
