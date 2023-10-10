@@ -22,10 +22,7 @@ if (UsernameLocation !== null) {
 //
 
 function ToggleModules() {
-  console.log("Module Clicked");
-  const ModuleContainer_Content = this.querySelector(
-    ".ModuleContainer_Content"
-  );
+  const ModuleContainer_Content = this.querySelector(".ModuleContainer_Content");
   if (ModuleContainer_Content.style.display === "none") {
     ModuleContainer_Content.style.display = "block";
   } else {
@@ -37,7 +34,5 @@ const ModuleContainers = document.querySelectorAll(".ModuleContainer");
 
 for (i = 0; i <= ModuleContainers.length; i++) {
   ModuleContainers[i].addEventListener("click", ToggleModules);
-  console.log("Added Event Listener To: " + (i + 1) + " Modules");
-  ModuleContainers[i].querySelector(".ModuleContainer_Content").style.display =
-    "none";
+  ModuleContainers[i].querySelector(".ModuleContainer_Content").style.display ="none";
 }

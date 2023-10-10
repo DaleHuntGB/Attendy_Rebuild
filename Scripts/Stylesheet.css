@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
-
 :root {
-  --DarkGrey: #1a1a1a;
-  --LightGrey: #9f9f9f;
-  --SelectedModule: #dadada;
-  --White: #ffffff;
-  --OffWhite: #f2f2f2;
-  --DarkBlue: #4098ff;
-  --LightBlue: hsl(212, 100%, 50%);
+   /* Colours */
+   --DarkGrey: #1A1A1A;
+   --LightGrey: hsl(0, 0%, 35%);
+   --SelectedModule: #dadada;
+   --White: #FFFFFF;
+   --OffWhite: hsl(0, 0%, 75%);
+   --DarkBlue: #4098FF;
+   --LightBlue: hsl(212, 100%, 50%);
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui,'Lato', sans-serif;
 }
 
 * > a {
@@ -31,7 +30,7 @@
 html,
 body {
   background-color: var(--LightGrey);
-  background-image: url("../Images/Backgrounds/Background_04.png");
+  background-image: url("../Images/Backgrounds/Darken/Background_04.png");
   background-position: center;
   height: 100%;
   width: 100%;
@@ -82,27 +81,27 @@ body {
   align-items: center;
   height: 5vh;
   flex-direction: column;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
 }
 
 .CheckIn_WelcomeText > h1 {
   font-weight: 600;
   color: var(--DarkGrey);
   margin: 10em 0em 0em 0em;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
 }
 
 .CheckIn_WelcomeText > p {
   font-weight: 900;
   font-size: 2em;
   color: var(--White);
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
 }
 
 .CheckIn_WelcomeText > h1 > span {
   font-weight: 900;
   color: var(--DarkBlue);
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
 }
 .NavigationBar_Links {
   display: flex;
@@ -116,7 +115,6 @@ body {
   background-color: var(--DarkBlue);
   padding: 0.25em;
   border-radius: 5px;
-  border: 1px solid black;
 }
 
 .CheckIn_InputFields {
@@ -129,12 +127,14 @@ body {
 }
 
 .CheckIn_InputFields > input {
-  height: 48px;
+  height: 3em;
   width: 80%;
+  border: 0px solid var(--DarkGrey);
   border-radius: 5px;
-  border: 1px solid black;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.25);
+  background-color: var(--White);
+  color: var(--DarkGrey);
   text-align: center;
-  font-weight: 600;
 }
 
 .CheckIn_InputFields > input::placeholder {
@@ -159,15 +159,16 @@ body {
 
 .ModuleContainers {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  background-color: var(--LightGrey);
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 80%;
-  margin: 3em auto 0em auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 90%;
+    margin: 0em auto 3em auto;
+    border: var(--LightGrey);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    margin: 3em auto 0em auto;
 }
 
 .ModuleContainers > div {
@@ -185,15 +186,20 @@ body {
 #OverallAttendanceDonut {
   width: 100%;
   height: 100%;
-  background-color: red;
   margin: 0 auto;
-  border-radius: 50%;
 }
 
 .ModuleContainers > div > p > canvas {
   width: 100%;
   height: 100%;
-  background-color: red;
   margin: 0em auto 1em auto;
-  border-radius: 50%;
+}
+
+.ModuleContainerStats
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
 }
