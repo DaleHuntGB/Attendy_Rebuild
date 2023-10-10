@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
-
 :root {
-  --DarkGrey: #1a1a1a;
-  --LightGrey: #9f9f9f;
+  --DarkGrey: #1A1A1A;
+  --LightGrey: hsl(0, 0%, 35%);
   --SelectedModule: #dadada;
-  --White: #ffffff;
-  --OffWhite: #f2f2f2;
-  --DarkBlue: #4098ff;
+  --White: #FFFFFF;
+  --OffWhite: hsl(0, 0%, 75%);
+  --DarkBlue: #4098FF;
   --LightBlue: hsl(212, 100%, 50%);
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: system-ui,'Lato', sans-serif;
 }
 
 .Wrapper {
@@ -35,8 +33,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 999;
+  background-color: rgba(0, 0, 0, 75%);
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +60,7 @@ body {
   font-size: 1.25em;
   z-index: 15;
   user-select: none;
+  z-index: 20;
 }
 
 .AttendyHome_Button > img
@@ -73,4 +72,17 @@ body {
 {
   background: var(--SelectedModule);
   color: var(--White);
+}
+
+.CameraOverlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--DarkBlue);
+  box-sizing: border-box;
+  z-index: 5;
+  user-select: none;
 }
