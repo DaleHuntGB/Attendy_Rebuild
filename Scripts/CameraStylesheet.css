@@ -47,3 +47,30 @@ body {
   font-size: 1.25em;
   color: white;
 }
+
+.AttendyHome_Button
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1.25em;
+  z-index: 15;
+  user-select: none;
+}
+
+.AttendyHome_Button > img
+{
+  margin: 0 auto;
+}
+
+.AttendyHome_Button:hover
+{
+  background: var(--SelectedModule);
+  color: var(--White);
+}
