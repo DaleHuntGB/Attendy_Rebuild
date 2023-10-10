@@ -13,7 +13,7 @@ class StudentRecord {
     constructor(studentid) {
         this.studentid = studentid;  
         this.attendance = new AttendanceStorageObj; 
-        this.enlisted_modules = ["CI517", "CI520", "CI536", "CI500"]; 
+        this.enlisted_modules = ["CI517", "CI520", "CI536"]; 
     }
 
 }
@@ -24,7 +24,6 @@ class AttendanceStorageObj {
         this.CI517 = new ModuleObj;  
         this.CI520 = new ModuleObj;  
         this.CI536 = new ModuleObj; 
-        this.CI500 = new ModuleObj;
     }
 }
 

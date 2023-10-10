@@ -6,7 +6,7 @@
             "firstname" : "Beck",
             "lastname" : "Farrington-Wheeler", 
             "studentid" : "bfw14", 
-            "enlisted_modules" : ["CI517", "CI520", "CI536", "CI500"],
+            "enlisted_modules" : ["CI517", "CI520", "CI536"],
             "attendance" : 
             {
                 "CI517" :
@@ -39,13 +39,13 @@
                         {
                                 "type" : "lecture",
                                 "date" : "220223",
-                                "room" : "204", 
+                                "room" : "205", 
                                 "time" : "13:02"
                         },
                         {
                                 "type" : "lab",
                                 "date" : "220223",
-                                "room" : "204", 
+                                "room" : "205", 
                                 "time" : "15:05"
                         }
                    ]
@@ -60,24 +60,33 @@
                         {
                                 "type" : "lecture",
                                 "date" : "220223",
-                                "room" : "204", 
+                                "room" : "206", 
                                 "time" : "13:02"
                         },
                         {
                                 "type" : "lab",
                                 "date" : "220223",
-                                "room" : "204", 
+                                "room" : "206", 
                                 "time" : "15:05"
                         }
                    ]
-                },
-                "CI500" :
+                }
+            }
+        },
+        "dsh27" :
+        {
+            "firstname" : "Dale",
+            "lastname" : "Hunt", 
+            "studentid" : "dsh27", 
+            "enlisted_modules" : ["CI517", "CI520", "CI536"],
+            "attendance" : 
+            {
+                "CI517" :
                 {
                     "meetings" : 20,
-                    "entries_num" : 5,
+                    "entries_num" : 15,
                     "entries" :
-                    [
-
+                    [ 
                         {
                                 "type" : "lecture",
                                 "date" : "220223",
@@ -91,10 +100,52 @@
                                 "time" : "15:05"
                         }
                    ]
+                },
+                "CI520" :
+                {
+                    "meetings" : 25,
+                    "entries_num" : 20,
+                    "entries" :
+                    [
+
+                        {
+                                "type" : "lecture",
+                                "date" : "220223",
+                                "room" : "205", 
+                                "time" : "13:02"
+                        },
+                        {
+                                "type" : "lab",
+                                "date" : "220223",
+                                "room" : "205", 
+                                "time" : "15:05"
+                        }
+                   ]
+                }, 
+                "CI536" :
+                {
+                    "meetings" : 18,
+                    "entries_num" : 16,
+                    "entries" :
+                    [
+
+                        {
+                                "type" : "lecture",
+                                "date" : "220223",
+                                "room" : "206", 
+                                "time" : "13:02"
+                        },
+                        {
+                                "type" : "lab",
+                                "date" : "220223",
+                                "room" : "206", 
+                                "time" : "15:05"
+                        }
+                   ]
                 }
             }
         }
-    }
+    } 
 }
 
 
