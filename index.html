@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=1, initial-scale=1.0" />
     <link rel="stylesheet" href="/Scripts/Stylesheet.css" />
     <script src="/Scripts/JavaScript.js" defer></script>
+    <script type="module" src="/Scripts/CheckIn.js" defer></script>
+    <script type="module" src="/Scripts/DataStorage.js" defer></script>
     <title>Attendy: Attendance Tracker</title>
   </head>
   <body>
@@ -12,18 +14,20 @@
       <div class="AttendyNavigationBar">
         <img src="/Images/AttendyLogo.png" />
         <div class="NavigationBar_Links">
-          <a href="CheckIn.html">Attendance</a>
+          <a href="Attendance.html">Attendance</a>
           <a href="Navigation.html">Navigation</a>
         </div>
       </div>
       <div class="CheckIn_WelcomeText">
         <h1>Welcome <span id="Username">Dale</span></h1>
+        <p id="CheckInTime"></p>
       </div>
+
       <div class="CheckIn_InputFields">
-        <input type="text" placeholder="StudentID" />
-        <input type="text" placeholder="Room Number" />
+        <input type="text" placeholder="StudentID" id="StudentID" />
+        <input type="text" placeholder="Room Number" id="RoomNumber" />
       </div>
-      <button class="CheckIn_Button">Check In</button>
+      <button id="Submit" class="CheckIn_Button">Check In</button>
     </div>
   </body>
 </html>

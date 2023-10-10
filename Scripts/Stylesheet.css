@@ -2,10 +2,10 @@
 
 :root {
   --DarkGrey: #1a1a1a;
-  --LightGrey: hsl(0, 0%, 35%);
+  --LightGrey: #9f9f9f;
   --SelectedModule: #dadada;
   --White: #ffffff;
-  --OffWhite: hsl(0, 0%, 75%);
+  --OffWhite: #f2f2f2;
   --DarkBlue: #4098ff;
   --LightBlue: hsl(212, 100%, 50%);
 }
@@ -72,6 +72,9 @@ body {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border: 1px solid black;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 .CheckIn_WelcomeText {
@@ -79,12 +82,21 @@ body {
   justify-content: center;
   align-items: center;
   height: 5vh;
-  margin: 3em 0em 0em 0em;
+  flex-direction: column;
 }
 
 .CheckIn_WelcomeText > h1 {
   font-weight: 600;
   color: var(--DarkGrey);
+  margin: 10em 0em 0em 0em;
+}
+
+.CheckIn_WelcomeText > p {
+  font-weight: 900;
+  font-size: 2em;
+  color: var(--White);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
 
 .CheckIn_WelcomeText > h1 > span {
@@ -136,4 +148,53 @@ body {
   color: #000;
   text-align: center;
   font-weight: 600;
+}
+
+.AttendanceHeading {
+  text-align: center;
+  color: var(--White);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  margin: 0em 0em 3em 0em;
+}
+
+.ModuleContainers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--LightGrey);
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
+  margin: 3em auto 0em auto;
+}
+
+.ModuleContainers > div {
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.ModuleContainers > div:hover {
+  background-color: var(--SelectedModule);
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+#OverallAttendanceDonut {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.ModuleContainers > div > p > canvas {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  margin: 0em auto 1em auto;
+  border-radius: 50%;
 }
