@@ -19,8 +19,6 @@ if (UsernameLocation !== null) {
   UsernameLocation.textContent = RandomName;
 }
 
-//
-
 function ToggleModules() {
   const ModuleContainer_Content = this.querySelector(".ModuleContainer_Content");
   if (ModuleContainer_Content.style.display === "none") {

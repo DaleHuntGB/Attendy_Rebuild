@@ -59,6 +59,22 @@ body {
   border-top-right-radius: 5px;
 }
 
+.ClearData_Button
+{
+  width: 20%;
+  position: absolute;
+  top: 6%;
+  left: 1%;
+  height: 3vh;
+  border: 1px solid black;
+  background: #ff4040;
+  color: var(--White);
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .AttendyNavigationBar {
   display: flex;
   flex-direction: row;
@@ -103,6 +119,7 @@ body {
   color: var(--DarkBlue);
   text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
 }
+
 .NavigationBar_Links {
   display: flex;
   justify-content: center;

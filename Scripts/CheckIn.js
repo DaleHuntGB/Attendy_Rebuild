@@ -130,6 +130,7 @@ let resetDemo = () =>
   {
     localStorage.clear();
     window.location.reload();
+    console.log("Local Storage Cleared")
   };
 
 let createNewStudentRecord = (_studentID) =>
@@ -164,6 +165,7 @@ if (urlParams.get("room_number") != null) {
 
 // Button Event Listener
 submitButton.addEventListener("click", checkIn);
+document.querySelector("#ClearData").addEventListener("click", resetDemo);
 
 // Update Time Field
 timeDisplay.textContent = getFormattedTime();
