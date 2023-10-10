@@ -6,7 +6,7 @@
             "firstname" : "Beck",
             "lastname" : "Farrington-Wheeler", 
             "studentid" : "bfw14", 
-            "enlisted_modules" : ["CI517", "CI520", "CI536"],
+            "enlisted_modules" : ["CI517", "CI520", "CI536", "CI500"],
             "attendance" : 
             {
                 "CI517" :
@@ -54,6 +54,27 @@
                 {
                     "meetings" : 18,
                     "entries_num" : 16,
+                    "entries" :
+                    [
+
+                        {
+                                "type" : "lecture",
+                                "date" : "220223",
+                                "room" : "204", 
+                                "time" : "13:02"
+                        },
+                        {
+                                "type" : "lab",
+                                "date" : "220223",
+                                "room" : "204", 
+                                "time" : "15:05"
+                        }
+                   ]
+                },
+                "CI500" :
+                {
+                    "meetings" : 20,
+                    "entries_num" : 5,
                     "entries" :
                     [
 
