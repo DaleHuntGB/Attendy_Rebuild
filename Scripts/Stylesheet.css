@@ -11,6 +11,7 @@
 
 * {
   font-family: system-ui,'Lato', sans-serif;
+  user-select: none;
 }
 
 * > a {
@@ -59,6 +60,11 @@ body {
   border-top-right-radius: 5px;
 }
 
+.CheckIn_Button:hover {
+  background: var(--LightBlue);
+  color: var(--White);
+}
+
 .ClearData_Button
 {
   width: 20%;
@@ -73,6 +79,12 @@ body {
   outline: none;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.25);
+}
+
+.ClearData_Button:hover {
+  background: #ff7373;
+  color: var(--White);
 }
 
 .AttendyNavigationBar {
@@ -97,27 +109,27 @@ body {
   align-items: center;
   height: 5vh;
   flex-direction: column;
-  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);
 }
 
 .CheckIn_WelcomeText > h1 {
   font-weight: 600;
   color: var(--DarkGrey);
   margin: 10em 0em 0em 0em;
-  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);
 }
 
 .CheckIn_WelcomeText > p {
   font-weight: 900;
   font-size: 2em;
   color: var(--White);
-  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);
 }
 
 .CheckIn_WelcomeText > h1 > span {
   font-weight: 900;
   color: var(--DarkBlue);
-  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);
 }
 
 .NavigationBar_Links {
@@ -132,6 +144,7 @@ body {
   background-color: var(--DarkBlue);
   padding: 0.25em;
   border-radius: 5px;
+  padding: 0.5em 0.75em;
 }
 
 .CheckIn_InputFields {
