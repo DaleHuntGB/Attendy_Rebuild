@@ -51,7 +51,7 @@ body {
   border-right: none;
   border-bottom: none;
   border-radius: 0%;
-  background: var(--DarkBlue);
+  background: var(--LightBlue);
   color: var(--White);
   font-weight: 600;
   outline: none;
@@ -61,7 +61,7 @@ body {
 }
 
 .CheckIn_Button:hover {
-  background: var(--LightBlue);
+  background: var(--DarkBlue);
   color: var(--White);
 }
 
@@ -144,7 +144,7 @@ body {
   background-color: var(--DarkBlue);
   padding: 0.25em;
   border-radius: 5px;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0.5em;
 }
 
 .CheckIn_InputFields {
