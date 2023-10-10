@@ -60,7 +60,7 @@ let checkIn = () => {
   let checkInTime = document.querySelector("#CheckInTime").textContent;
 
   if (!data.data[studentID]) {
-    console.log("ID not found");
+    console.log("ID Not Found");
     data.data[studentID] = createNewStudentRecord(studentID);
   }
 
@@ -82,7 +82,7 @@ let checkIn = () => {
   data.data[studentID].attendance[currentModule].entries_num++;
   data.data[studentID].attendance[currentModule].meetings++;
 
-  console.log("New attendance record created" + attendanceObj);
+  console.log("Attendance Record Created" + attendanceObj);
 
   // Update Local Storage
   updateJsonContent(data, studentID);
@@ -148,10 +148,10 @@ let createNewStudentRecord = (_studentID) =>
 // Check if localstorage in use / demo in progress
 if (localStorage.getItem("jsonData") != null) {
   data = JSON.parse(localStorage.getItem("jsonData"));
-  console.log("Found local data");
+  console.log("Found Local Data");
 } else {
   data = fetchAttendanceJson();
-  console.log("Retrieved JSON data");
+  console.log("Retrieved JSON Data");
 }
 
 // Get Data from URL parameters
@@ -160,7 +160,7 @@ if (urlParams.get("room_number") != null) {
   roomDisplay.value = roomNumber;
   console.log("Room number: " + roomNumber);
 } else {
-  console.log("No url params provided");
+  console.log("No URL Params Provided");
 }
 
 // Button Event Listener
