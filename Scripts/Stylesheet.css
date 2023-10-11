@@ -183,8 +183,7 @@ body {
 .AttendanceHeading {
   text-align: center;
   color: var(--White);
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 3px 10px rgba(0,0,0,0.25);
   margin: 0em 0em 3em 0em;
 }
 
